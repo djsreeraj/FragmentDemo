@@ -17,6 +17,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="ChangeFragment"
         android:text="Fragment 1"
         android:id="@+id/button" />
 
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fragment 2"
+        android:onClick="ChangeFragment"
         android:id="@+id/button2" />
 
     <fragment

@@ -36,23 +36,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ChangeFragment(View view){
-        FragmentOne fragment1 = new FragmentOne();
-        FragmentTwo fragment2 = new FragmentTwo();
+        FragmentOne fragmentOne = new FragmentOne();
+        FragmentTwo fragmentTwo = new FragmentTwo();
+
+        android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
+        android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+
 
         if(view == findViewById(R.id.button)){
 
-            FragmentManager fm = getFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.replace(R.id.fragment_place, fragment1);
+          //  FragmentManager fm = getFragmentManager();
+         //   FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragment_place, fragmentOne );
             ft.commit();
 
 
         }
         if(view == findViewById(R.id.button2)){
 
-            FragmentManager fm = getFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.replace(R.id.fragment_place, fragment2);
+           // FragmentManager fm = getFragmentManager();
+          //zx  FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragment_place, fragmentTwo);
             ft.commit();
 
         }
